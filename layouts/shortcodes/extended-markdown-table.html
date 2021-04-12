@@ -1,0 +1,2 @@
+{{ $table := .Inner | markdownify }}
+{{ replace $table "<table>" "<table class=\"extended-markdown-table\">" | safeHTML }}
